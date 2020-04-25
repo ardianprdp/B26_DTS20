@@ -1,1 +1,234 @@
+* {
+    margin: 0;
+  }
+  /* Header Background */
+  .header {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
 
+  /* Header Container */
+  .header-container {
+    text-align: center;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    opacity: 0.9;
+  }
+
+    /* Header Container Paragraf */
+  .header-container p {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  .logo {
+    top: 120px;
+    opacity: 0.8;
+    position: absolute;
+    animation: rotation 60s infinite linear;
+    z-index: -1;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+   /* Header Container Title H1 */
+  .header-container h1 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+   /* Header Container Tombol Selengkapnya */
+  .intro-btn {
+    padding: 25px;
+    background-color: #239b76;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: padding 0.5s;
+  }
+
+   /* Header Container Tombol Selengkapnya */
+  .intro-btn:hover {
+    padding: 26px;
+    background-color: #1bf7b5;
+  }
+
+   /* Navigasi Container */
+  .navigasi-link {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    display: flex;
+    list-style-type: none;
+  }
+
+   /* Navigasi Text Hover*/
+  .navigasi-text:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+  }
+
+   /* Navigasi Text */
+  .navigasi-text {
+    width: 64px;
+    color: white;
+    display: block;
+    padding: 0 5px;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 0.76em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  /* Body */
+  body {
+    color: white;
+    background-color: #222831;
+    font-family: Arial, sans-serif;
+    line-height: 2;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  
+  h1,
+  h2,
+  p {
+    letter-spacing: 1px;
+    animation: fadein 3s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .sebaran-deskripsi {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .sebaran-deskripsi,
+  .sebaran-bottom {
+    text-align: center;
+  }
+  
+  section {
+    padding: 75px 30px;
+    border-top: 1px solid #eeeeee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+
+  #covid-19,
+  #pencegahan,
+  #sebaran  {
+    border-top: 1px solid #eeeeee;
+    background-color: #222831;
+  }
+
+  #gejala,
+  #penularan  {
+    border-top: 1px solid #eeeeee;
+    background-color: #393e46;
+  }
+
+  .catatan {
+    letter-spacing: 1px;
+    padding-top: 20px;
+  }
+
+  .gejala,
+  .pencegahan,
+  .penularan {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .box {
+    position: relative;
+    
+  }
+  
+  .grid-container {
+    margin-top: 20px;
+  
+  }
+
+  .url-link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .url-link:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .url-link:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+    background-color: #00adb5;
+    
+  }
+  .footer-h2 {
+    font-size: 18px;
+  }
+
+  .footer-p {
+    font-size: 14px;
+  }
+  
+  .footer-span{
+    color: #ff000d;
+  }
